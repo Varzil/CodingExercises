@@ -1,0 +1,22 @@
+# Astronaut Daily Schedule Organizer
+
+This console-based application helps astronauts organize their daily schedules. It allows users to add, remove, and view daily tasks with features to handle conflicts and prioritize tasks.
+
+## Design Patterns Used
+1. **Singleton Pattern**: Used in `ScheduleManager` to ensure only one instance manages all tasks.
+2. **Factory Pattern**: Used in `TaskFactory` to create `Task` objects.
+3. **Observer Pattern**: Used in `ConflictObserver` to notify users of task conflicts.
+
+## Features
+1. **Add Task**: Adds a new task with description, start time, end time, and priority.
+2. **Remove Task**: Removes an existing task by description.
+3. **View Tasks**: Displays all scheduled tasks sorted by start time.
+4. **Conflict Detection**: Detects and alerts users of overlapping tasks.
+
+## Running the Application
+1. Clone the repository:
+    ```bash
+    git clone <repository-link>
+    ```
+2. Navigate to the project directory and compile the Java files.
+3. Run `AstronautDailyScheduleApp` to start the application.

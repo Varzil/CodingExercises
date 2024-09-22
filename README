@@ -1,0 +1,54 @@
+# Design Patterns Example
+
+This repository demonstrates the usage of various design patterns in Java. It contains examples of Behavioral, Creational, and Structural design patterns as required.
+
+## Patterns Implemented
+
+1. **Behavioral Patterns**
+    - Observer Pattern
+    - Strategy Pattern
+
+2. **Creational Patterns**
+    - Singleton Pattern
+    - Factory Pattern
+
+3. **Structural Patterns**
+    - Adapter Pattern
+    - Facade Pattern
+
+## Running the Code
+
+1. Clone the repository:
+    ```bash
+    git clone <repository-link>
+    ```
+2. Navigate to the project directory and open it in your preferred IDE.
+3. Compile and run the `FileName.java` file to see the Pattern in action.
+
+## Structure
+
+- **ObserverPatternDemo.java**: Demonstrates the Observer pattern with a `Product` and `User` classes.
+- **Product.java**: Observable entity that notifies observers of price changes.
+- **User.java**: Observer that reacts to changes in the `Product`.
+- **Observer.java**: Interface defining the observer's contract.
+- **PaymentStrategy.java**: Interface defining the payment method contract.
+- **CreditCardPayment.java**: Implements payment via Credit Card.
+- **PayPalPayment.java**: Implements payment via PayPal.
+- **BitcoinPayment.java**: Implements payment via Bitcoin.
+- **ShoppingCart.java**: Holds a payment strategy and executes payment based on the selected strategy.
+- **StrategyPatternDemo.java**: Demonstrates the Strategy pattern by switching between different payment methods dynamically.
+
+### Strategy Pattern
+
+The Strategy Pattern is demonstrated in this example with a shopping cart that can use different payment strategies (Credit Card, PayPal, Bitcoin).
+
+
+
+#### Running the Example:
+1. Compile and run `StrategyPatternDemo.java` to see the output.
+2. Modify the payment strategy in `StrategyPatternDemo` to test other methods.
+
+
+## License
+
+This project is licensed under the MIT License.
